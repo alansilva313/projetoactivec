@@ -3,512 +3,475 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-    <title>BLOG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+    <title>Blog</title>
 
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Montserrat', sans-serif;
+            font-family: Montserrat, helvetica, sans-serif;
         }
 
-        body {
-            font-size: 1rem; /* Base font size */
-            line-height: 1.5; /* Line height for readability */
-        }
-
-        .content {
-            width: 100%;
+        .container {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #7826f2;
-            padding: 5vw 2vw; /* Responsive padding */
-            flex-direction: column;
-            gap: 1rem;
+            gap: 32px;
+            width: 100%;
+            height: 100%;
+            background-color: #7826F2;
+            overflow: auto;
+            padding: 132px;
         }
 
-        .main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .cardMain {
             width: 472px;
-            max-width: 90vw; /* Responsive max-width */
+            height: 1707.8px;
             background-color: #fff;
-            padding: 2rem;
-            border-radius: 1rem;
+            border-radius: 16px;
+            padding: 24px;
         }
 
-        .cardImg {
+        .cardImgTopo {
+            width: 100%;
+            height: 243.8px;
+            background-color: #f6f5ff;
+            border-radius: 8px;
             display: flex;
-            align-items: center;
+            align-items: end;
             justify-content: center;
-            width: 100%;
-            height: auto;
-            background: linear-gradient(270deg, #E7E6F0 0%, #F6F5FF 100%);
-            border-radius: 0.5rem;
-            padding-top: 2rem;
             overflow: hidden;
-        }
-        .cardImg img {
-            object-fit: cover;
-        }
 
-        .textCardImg {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            width: 100%;
-            max-width: 50vw;
-            text-align: center;
-        }
+            && 
 
-        .cardText {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 1rem;
+            img {
+                width: 314.88px;
+              
+                object-fit: cover;
+            }
+
         
-        &&
-
-        p {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
         }
+
+
+
+        .texts {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            width: 100%;
+            margin-top: 32px;
 
         &&
 
         h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
             font-size: 18px;
-        }
-        }
-       
-
-  
-
-        .logo img {
-            width: 100%;
-            max-width: 200px;
+            color: #333333;
+            font-weight: 500;
         }
 
-        .itensMain {
+        &&
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+        }
+        }
+
+        .ultimaPostagem {
             display: flex;
             flex-direction: column;
+            margin-top: 32px;
             width: 100%;
-            gap: 2rem;
-            margin-top: 2rem;
+            height: 321px;
+            
+           
         }
+        
 
-        .item {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            border: 1px solid #EAEAF5;
-            padding: 1rem;
-            border-radius: 0.5rem;
-        }
-
-        .itemCor1, .itemCor2, .itemCor3 {
-            min-width: 3rem;
-            height: 3rem;
-            border-radius: 0.5rem;
-        }
-
-        .itemCor1 {
-            background-color: #C6ABFF;
-        }
-
-        .itemCor2 {
-            background-color: #7826F2;
-        }
-
-        .itemCor3 {
-            background-color: #0E041F;
-        }
-
-        .itemText {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        .textFooter {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            margin-top: 2rem;
-        }
-
-        .buttonCard {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 2rem;
-        }
-
-        .buttonCard a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #6e23de;
-            width: 100%;
-            max-width: 50vw;
-            height: 3rem;
-            border-radius: 0.5rem;
-            color: #fff;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .redesSociaisLinks {
-            margin-top: 2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .redes {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .privacidadesDesconectar {
-            display: flex;
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .privacidadesDesconectar a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .postLast {
-            display: flex;
-            flex-direction: column;
-            padding: 0.5rem;
-        }
-
-        .postLast .info {
-            width: 100%;
+        .titleUltimaPostagem {
             display: flex;
             align-items: center;
             justify-content: space-between;
-        
-        &&
-        h4 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: 16px;
-        }
-        }
-
-        .cardContentImg {
-            width: 100%;
-            height: auto;
-            border-top-left-radius: 0.5rem;
-            border-top-right-radius: 0.5rem;
-        }
-
-        .imgContent {
-            overflow: hidden;
-        }
-        .imgContent img, svg {
-            object-fit: cover;
-            width: 100%;
-        }
-
-        .btnLinkConfere {
-            width: 100%;
-            display: flex;
-         
-            justify-content: space-around;
-            align-items: center;
-            background-color: #f6f5ff;
-            gap: 10px;
-          
-            padding: 1rem;
-        }
-
-        .btnLinkConfere a {
-           
-            border-radius: 0.5rem;
-            border: 1px solid #DBDBE5;
-            padding: 1rem;
-            text-decoration: none;
-            color: #000;
-            text-align: center;
-        }
-
-        .entrarComunidade {
-            width: 100%;
-            padding: 1rem;
-            margin-top: 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            background-color: #FFFFFF;
-        }
-
-        .entrarComunidade a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50%;
-            min-width: 70%;
-            max-width: 20rem;
-            text-align: center;
-            height: 3rem;
-            background-color: #6e23de;
-            text-decoration: none;
-            color: #fff;
-            border-radius: 0.5rem;
-        }
-
-        .linehr {
-            margin-top: 2rem;
-            width: 100%;
-            border-top: 1px solid #ccc;
-            padding-top: 1rem;
-        }
-
-        .linehr h3 {
-            padding: 10px;
-        }
-
-        .cardPostOutrosConteudos {
-            min-width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-       
-        }
-
-        .cardFilho {
-            width: 45%;
-            max-width: 18rem;
-            height: auto;
-        }
-
-        .cardFilho .img {
-            display: flex;
-            overflow: hidden;
-            border-radius: 1rem;
-            object-fit: cover;
-        }
-
-        .img img {
-            object-fit: cover;
-            width: 100%;
-            height: auto;
-        }
-
-        .text {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 0.5rem;
-        }
-
-        .text a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            text-decoration: none;
-            max-width: 60%;
-            color: #000;
-            border-radius: 8px;
-            padding: 12px 20px 12px 20px;
-            border: 1.5px solid #ccc;
-        }
-        .text h3 {
-                text-align: start;
-                padding: 0;
-            }
-
-        .description {
-            white-space: nowrap; 
-            overflow: hidden; 
-            text-overflow: ellipsis; 
-        }
-
-        .imgpquena {
-            display: none;
-        }
-
-        .imagemgrande {
-                display: flex;
-            }
-
-
-        @media (max-width: 658px) {
-            .content {
-                padding: 5vw 2vw;
-            }
-
-            .btnLinkConfere {
-                display: flex;
-                align-items: start;
-                flex-direction: column;
-                justify-content: start;
-            }
-
-            .text {
-                display: flex;
-                flex-direction: column;
-                align-items: start;
-            }
-
-            .text a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            text-decoration: none;
-            color: #000;
             
-            padding: 12px 20px 12px 20px;
-            border: 1.5px solid #ccc;
         }
 
-            .description {
-                width: 90%;
-            white-space: nowrap; 
-            overflow: hidden; 
-            text-overflow: ellipsis; 
+        .cardImgUltimaPostagem {
+            margin-top: 16px;
+            background-color: #F6F5FF;
+            border-radius: 15px 15px 15px 15px;
         }
 
-            .text h3 {
-                text-align: start;
-                padding: 0;
+        .titlesCardUltimaPostagem {
+            width: 100%;
+            height: 88px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #F6F5FF;
+            padding: 20px;
+            border-radius: 15px 15px 15px 15px;
+        }
+
+        .btnCardUltimaPostagem {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            border: 1.5px solid #DBDBE5;
+            border-radius: 8px;
+            
+
+            &&
+
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                color: #333333;
+            }
+        }
+
+
+        .textCardultimaPostagem p {
+            font-size: 16px;
+            font-weight: 500;
+            color: #333333;
+            line-height: 22.4px;
+
+        }
+
+
+        .cardParoveite {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+            margin-top: 32px;
+            
+
+            &&
+
+            h3 {
+                font-size: 18px;
+                font-weight: 500px;
+                color: #333333;
+                line-height: 25.2px;
             }
 
-            .btnLinkConfere a {
-                width: 100%;
+            &&
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22.4px;
+                color: #4D4D4D;
+
             }
 
-            .entrarComunidade a {
-                width: 100%;
-            }
-            .main {
-                width: 90vw;
-                padding: 1.5rem;
-            }
-
-            .cardPostOutrosConteudos {
+            a {
                 display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
                 align-items: center;
                 justify-content: center;
-                width: 100%;
-            }
-            .cardFilho {
-                min-width: 100%;
-            }
-            .cardImg h3 {
-                font-size: 1rem;
-            }
-
-            .cardImg img {
-                width: 80%;
-                display: flex;
-            }
-
-            .textCardImg {
-                max-width: 100%;
-            }
-
-            .item {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .itemText {
-                width: 100%;
-            }
-
-            .imagemgrande {
-                display: none;
-            }
-
-            .imgpquena {
-                display: flex;
+                width: 246px;
+                padding: 16px 20px 16px 20px;
+                background-color: #6E23DE;
+                border-radius: 8px;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 500;
+                text-decoration: none;
+                text-align: center;
+                line-height: 25.2px;
             }
         }
 
-        @media (max-width: 480px) {
-            .buttonCard a {
-                width: 100%;
-            }
+        .posts {
+            width: 100%;
+            border-top: 1.5px solid #EAEAF5;
+            margin-top: 32px;
 
-            .privacidadesDesconectar {
-                flex-direction: column;
-                align-items: center;
+        &&
+
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #333333;
+            margin-top: 24px;
+        }
+        }
+
+        .postFilhos {
+            width: 100%;
+            height: 354px;
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .post {
+            height: 354px;
+            width: 204px;
+            border-radius: 8px;
+
+        &&
+
+        img {
+            border-radius: 16px;
+        }
+        }
+
+        .textosPost {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .tt {
+            width: 100%;
+            height: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            margin: 0;
+            margin-top: 8px;
+
+            && 
+
+            .pt {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 22.4px;
+                color: #333333;
             }
         }
+
+        .btnP {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+
+        .btnPost {
+            width: 104px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px 12px 20px;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1.5px solid #EAEAF5;
+            line-height: 19.6px;
+            text-decoration: none;
+            border-radius: 8px;
+
+
+            &&
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19.6px;
+                color: #4D4D4D;
+            }
+        }
+
+        
+        .redesLinks {
+            width: 285px;
+            height: 74px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+        &&
+
+        .logoRedesSociasi {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+
+        &&
+
+        .linksUteis {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+           
+        }
+
+
+        .linksUteis a {
+            font-size: 14px;
+            color: #DDDCE5;
+            text-decoration: none;
+            font-weight: 400;
+            font-weight: 19.6px;
+        }
+        }
+
+
     </style>
 </head>
 <body>
 
-    <div class="content">
-        <div class="logo">
-            <img src="./assets/img/logo.png" alt="Logo">
-        </div>
-        <div class="main">
-            <div class="cardImg">
-                
-                                
-                          </div>
-                                
-                        </div>
-                        <div class="text">
-                            <p>07/07/2024</p>
-                            <h3>Crie e deixe criar</h3>
-                            <p class="description">Uma história bem contada precisa seguir...</p>
-                            <a href="#">Ler mais</a>
-                        </div>
+
+    <div class="container">
+            
+         <div class="logo">
+            <img src="./assets/img/logo.png" alt="logo">
+         </div>
+  
+        <div class="cardMain">
+
+
+            <div class="cardImgTopo">
+               
+                <img src="./assets/img/iPad Pro mockup 13-inch top view.png" alt="">
+            </div>
+
+            <div class="texts">
+               <h3>Você já conferiu nosso Blog?</h3>
+               
+               <p>Ele está repleto de artigos e conteúdos exclusivos que foram especialmente desenvolvidos para enriquecer seu conhecimento e fornecer insights valiosos
+                 sobre tecnologia, marketing e negócios. Não perca a oportunidade de aprender mais e se inspirar com nosso conteúdo de qualidade.</p>
+            </div>
+
+            <div class="ultimaPostagem">
+             <div class="titleUltimaPostagem">
+                <h3>Última postagem</h3>
+                <p>07/07/2024</p>
+             </div>
+
+             <div class="cardImgUltimaPostagem">
+                <div class="imgUltimaPostagem">
+                    <img src="./assets/img/Frame 44.png" alt="imgUltimaPostagem">
+                </div>
+
+                <div class="titlesCardUltimaPostagem">
+                    <div class="textCardultimaPostagem">
+                        <p>Comunidade e a mudança de comportamento do consumidor</p>
+                    </div>
+
+                    <div class="btnCardUltimaPostagem">
+                        <a href="">Conferir</a>
                     </div>
                 </div>
+                
+             </div>
+
+
+           
+
+             <div class="cardParoveite">
+                <h3>Aproveite e junte-se à nossa comunidade gratuita!</h3>
+
+              <p>Além disso, gostaríamos de convidá-lo para fazer parte da nossa comunidade gratuita da Cativa, 
+                onde você pode conectar-se com outros líderes e trocar experiências valiosas.</p>
+
+
+                <a href="">Entrar na comunidade</a>
+
+             </div>
+
+              
+             <div class="posts">
+                <h3>Outros conteúdos do blog que podem te interessar</h3>
+
+                <div class="postFilhos">
+
+                    <div class="post">
+                        <img src="./assets/img/image 7 (1).png" alt="">
+
+                        <div class="textosPost">
+                            <div class="tt">
+                                <p>07/07/2024</p>
+                            <p class="pt">Você é um bom contador de histórias?</p>
+
+                            <div class="btnP">
+                                <p>Uma história bem contada precisa seguir...</p>
+
+                                <a href="" class="btnPost">Ler mais</a>
+                            </div>
+
+                            </div>
+
+                         
+                        
+                            
+                              
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="post">
+                        <img src="./assets/img/image 7.png" alt="">
+
+                        <div class="textosPost">
+                            <div class="tt">
+                            <p>07/07/2024</p>
+                            <p class="pt">Crie e deixe criar</p>
+
+                            <div class="btnP">
+                                <p>
+                                    Criar, Produzir, inventar.
+                                        Ser criativo é ter a habilidade...
+                                </p>
+
+                                <a href="" class="btnPost">Ler mais</a>
+                            </div>
+
+                            </div>
+                    </div>
+
+
+
+
+
+                </div>
+             </div>
             </div>
+            
+           
+           
         </div>
 
-        <div class="redesSociaisLinks">
-            <div class="redes">
-                <a href="#">
-                    <img src="https://placehold.co/40x40" alt="Placeholder Image" >
-                </a>
-                <a href="#">
-                    <img src="https://placehold.co/40x40" alt="Placeholder Image" >
-                </a>
-                <a href="#">
-                    <img src="https://placehold.co/40x40" alt="Placeholder Image" >
-                </a>
-            </div>
+     
 
-            <div class="privacidadesDesconectar">
-                <a href="#">Políticas de Privacidade</a>
-                <a href="#">Desinscrever-se</a>
-            </div>
+    </div>
+
+    <div class="redesLinks">
+        <div class="logoRedesSociasi">
+            <a href="">
+                <img src="./assets//img/logoinstagram.png" alt="logo_intagram">
+            </a>
+
+            <a href="">
+                <img src="./assets//img/linkedin.png" alt="logo_linkedin">
+            </a>
+
+
+            <a href="">
+                <img src="./assets//img/youtube.png" alt="logo_youtube">
+            </a>
+        </div>
+
+
+        <div class="linksUteis">
+            <a href="">Políticas de Privacidade</a>
+            <a href="">Desinscrever-se</a>
         </div>
     </div>
     
