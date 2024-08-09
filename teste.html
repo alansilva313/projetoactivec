@@ -1,810 +1,736 @@
-<html>
-
-  <head>
-    <meta />
-    <meta content="width=device-width, initial-scale=1.0" />
-    <link />
-    <title>Blog</title>
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+    <title>NOVO BLOG</title>
 
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Montserrat, helvetica, sans-serif;
-      }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, helvetica, sans-serif;
+}
 
-      .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 32px;
-        width: 100%;
-        height: 100%;
-        background-color: #7826F2;
-        overflow: auto;
-        padding-top: 132px;
-        padding-bottom: 132px;
-      }
+.container
+{
+    width: 100%;
+    height: 100%;
+    background: #7826F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
-      .cardMain {
-        width: 472px;
-        height: 1707.8px;
-        background-color: #fff;
-        border-radius: 16px;
-        padding: 24px;
-      }
 
-      .cardImgTopo {
-        width: 100%;
-        height: 243.8px;
-        background-color: #f6f5ff;
-        border-radius: 8px;
-        display: flex;
-        align-items: end;
-        justify-content: center;
-        overflow: hidden;
+.logo {
+    width: 472px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
 
-        && img {
-          width: 424px;
-          border-radius: 16px 16px 0px 0px;
-          object-fit: cover;
+.content {
+    width: 472px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+
+.cardImagemPrincipal
+{
+    width: 100%;
+            height: 237.16px;
+            background-color: #e9e8f1;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-left: 32px;
+            overflow: hidden;
+
+
+    &&
+
+    p {
+            color: #7826F2;
+            font-size: 16px;
+            font-weight: 400;
+           }
+        &&
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 33.6px;
+            color: #333333;
+            margin-top: 7px;
         }
 
+        &&
 
-      }
+            .imgCardTextPrincipal img {
+                height: 241.01px;
+                object-fit: cover;
+            }
 
 
-
-      .img_topo1 {
-        display: flex;
-      }
-
-      .img_topo2 {
-        display: none;
-      }
+}
 
 
 
+.textoInicial {
+    display: flex;
+    flex-direction: column;
+   
+    margin-top: 32px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
 
-      .texts {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        width: 100%;
-        margin-top: 32px;
+    &&
 
-        && h3 {
-          font-size: 18px;
-          color: #333333;
-          font-weight: 500;
-        }
+    p {
 
-        && p {
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 22.4px;
-        }
-      }
-
-      .ultimaPostagem {
-        display: flex;
-        flex-direction: column;
-        margin-top: 32px;
-        width: 100%;
-        height: 321px;
-
-
-      }
-
-
-      .titleUltimaPostagem {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-      }
-
-      .cardImgUltimaPostagem {
-        margin-top: 16px;
-        background-color: #F6F5FF;
-        border-radius: 15px 15px 15px 15px;
-      }
-
-      .titlesCardUltimaPostagem {
-        width: 100%;
-        height: 88px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #F6F5FF;
-        padding: 20px;
-        border-radius: 15px 15px 15px 15px;
-      }
-
-      .btnCardUltimaPostagem {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 16px;
-        border: 1.5px solid #DBDBE5;
-        border-radius: 8px;
-
-
-        && a {
-          text-decoration: none;
-          font-size: 16px;
-          color: #000000;
-          font-weight: 600;
-        }
-      }
-
-
-      .textCardultimaPostagem p {
         font-size: 16px;
-        font-weight: 500;
-        color: #333333;
         line-height: 22.4px;
+        color: #4D4D4D;
+        font-weight: 400;
 
-      }
+    }
+
+    &&
+
+    h3{
+        font-size: 24px;
+        color: #333333;
+        line-height: 33.6px;
+        font-weight: 600;
+    }
+}
 
 
-      .imgUltimaPostagem1 {
-        display: flex;
-        width: 424px;
-        height: 206px;
-        object-fit: cover;
-        border-radius: 16px 16px 0px 0px;
-      }
 
-      .imgUltimaPostagem2 {
-        display: none;
-      }
+.ultimaPostagem {
+    width: 100%;
+    margin-top: 32px;
+    
 
 
-      .cardParoveite {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
+    &&
+
+    .headerUtilmaPostagem {
         width: 100%;
-        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
 
-        && h3 {
-          font-size: 18px;
-          font-weight: 500px;
-          color: #333333;
-          line-height: 25.2px;
+
+    &&
+
+
+    .cardImagemUltimaPostagem {
+        width: 100%;
+   
+       
+        
+
+
+        &&
+
+        img {
+            width: 100%;
+            border-radius: 16px 16px 0px 0px;
+            margin-top: 16px;
         }
+    }
 
-        && p {
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 22.4px;
-          color: #4D4D4D;
 
-        }
+    &&
+
+    .cardTextoBotaoUltimaPostagem {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: #F6F5FF;
+        padding: 16px;
+        border-radius: 0px 0px 16px 16px;
+
+
+
+        &&
 
         a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          padding: 16px 20px 16px 20px;
-          background-color: #6E23DE;
-          border-radius: 8px;
-          color: #fff;
-          font-size: 18px;
-          font-weight: 500;
-          text-decoration: none;
-          text-align: center;
-          line-height: 25.2px;
+            width: 112px;
+            padding: 16px;
+            border-radius: 8px;
+            border: 1.5px solid #DBDBE5;
+            text-decoration: none;
+            color: #333333;
+            text-align: center;
         }
-      }
+        
+    }
 
-      .posts {
+
+
+}
+
+.cardJuntesseAnossaComunidade {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+
+
+
+
+    &&
+    
+    p {
+
+        color: #4D4D4D;
+
+    }
+
+    &&
+
+    a {
         width: 100%;
-        border-top: 1.5px solid #EAEAF5;
-        margin-top: 32px;
-
-        && h3 {
-          font-size: 18px;
-          font-weight: 500;
-          color: #333333;
-          margin-top: 24px;
-        }
-      }
-
-      .postFilhos {
-        width: 100%;
-        height: 354px;
-        margin-top: 24px;
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .post {
-        height: 354px;
-        width: 204px;
-        border-radius: 8px;
-
-        && img {
-          border-radius: 16px;
-        }
-      }
-
-      .textosPost {
-        display: flex;
-        flex-direction: column;
-
-      }
-
-      .tt {
-        width: 100%;
-        height: 5px;
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        margin: 0;
-        margin-top: 8px;
-
-        && .pt {
-          font-size: 16px;
-          font-weight: 600;
-          line-height: 22.4px;
-          color: #333333;
-        }
-      }
-
-      .btnP {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        margin-top: 16px;
-      }
-
-
-      .btnPost {
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 12px 20px 12px 20px;
-        font-size: 14px;
-        font-weight: 500;
-        border: 1.5px solid #EAEAF5;
-        line-height: 19.6px;
+        text-align: center;
+        padding: 16px 20px 16px 20px;
+        background-color: #7826F2;
+        color: #fff;
         text-decoration: none;
         border-radius: 8px;
-        color: #000;
-        font-weight: 600;
+    }
+}
 
 
-        && p {
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 19.6px;
-          color: #000000;
-          font-weight: 600;
-        }
-      }
+.cardOutrosConteudos {
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 
 
-      .redesLinks {
-        width: 285px;
-        height: 74px;
+    &&
+
+    .contentCardOutrosConteudos {
+        margin-top: 24px;
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
 
-        && .logoRedesSociasi {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 16px;
 
-          && img {
+        &&
+
+        a {
+            padding: 16px 20px 16px 20px;
+            background-color: #6E23DE;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 8px;
+        }
+    }  
+}
+
+
+.cardPostTextButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+
+    &&
+
+    a {
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        padding: 12px 20px 12px 20px;
+        border: 1.5px solid #EAEAF5;
+        border-radius: 8px;
+    }
+}
+
+
+
+.redesSociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+    width: 100%;
+
+
+    &&
+
+    .linksRedesSociais {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+
+        &&
+
+        img {
             width: 32px;
             height: 32px;
             object-fit: cover;
-          }
         }
 
+    
+    }
 
-        && .linksUteis {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          width: 100%;
+    &&
 
-        }
-
-
-        .linksUteis a {
-          font-size: 14px;
-          color: #DDDCE5;
-          text-decoration: none;
-          font-weight: 400;
-          font-weight: 19.6px;
-        }
-      }
-
-
-      .imagem_post1 {
+    .politicaDesinscreverse {
         display: flex;
-        width: 203px;
-        height: 171px;
-        object-fit: cover;
-      }
+        align-items: center;
+        gap: 16px;
+      
 
 
+        &&
 
-
-      .imagem_post3 {
-        display: flex;
-        width: 203px;
-        height: 171px;
-        object-fit: cover;
-      }
-
-
-
-
-
-
-
-      @media (max-width: 600px) {
-
-        .cardMain {
-          width: 288px;
-          height: 2025px;
-          background-color: #fff;
-          border-radius: 16px;
-          padding: 24px;
-        }
-
-        .cardImgTopo {
-          width: 100%;
-          height: 138px;
-          background-color: #f6f5ff;
-          border-radius: 8px;
-          display: flex;
-          align-items: end;
-          justify-content: center;
-          overflow: hidden;
-
-          && img {
-            width: 240px;
-            object-fit: cover;
-          }
-
-
-        }
-
-
-
-
-        .texts {
-          display: flex;
-          flex-direction: column;
-          gap: 32px;
-          width: 100%;
-          margin-top: 32px;
-
-          && h3 {
-            font-size: 16px;
-            color: #333333;
-            font-weight: 500;
-            text-align: center;
-            color: #0E041F;
-          }
-
-          && p {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 19.6px;
-            color: #4D4D4D;
-          }
-        }
-
-        .ultimaPostagem {
-          display: flex;
-          flex-direction: column;
-          margin-top: 32px;
-          width: 100%;
-          height: 321px;
-
-
-        }
-
-
-        .titleUltimaPostagem {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-
-          && h3 {
-            font-size: 14px;
-            font-weight: 600;
-            color: #333333;
-            line-height: 19.6px;
-          }
-
-          && p {
-            font-size: 12px;
-            font-weight: 400;
-            color: #7F7F7F;
-            line-height: 16.8px;
-          }
-
-        }
-
-        .cardImgUltimaPostagem {
-          margin-top: 16px;
-          background-color: #F6F5FF;
-          border-radius: 15px 15px 15px 15px;
-
-
-          && img {
-            width: 240px;
-            height: 112px;
-            object-fit: cover;
-          }
-        }
-
-
-
-        .titlesCardUltimaPostagem {
-          width: 100%;
-          height: 140px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between;
-          background-color: #F6F5FF;
-          padding: 10px;
-          border-radius: 15px 15px 15px 15px;
-
-
-          && p {
-            font-size: 14px;
-          }
-
-
-        }
-
-        .btnCardUltimaPostagem {
-          display: flex;
-          width: 100%;
-          align-items: center;
-          justify-content: center;
-          border: 1.5px solid #DBDBE5;
-          border-radius: 8px;
-          padding: 13px;
-
-
-          && a {
+        a {
+            color: #fff;
             text-decoration: none;
-            font-size: 16px;
-            color: #333333;
-
-          }
         }
+    }
+}
 
 
-        .textCardultimaPostagem p {
-          font-size: 16px;
-          font-weight: 500;
-          color: #333333;
-          line-height: 22.4px;
-
-        }
-
-
-        .cardParoveite {
-          display: flex;
-          flex-direction: column;
-          gap: 24px;
-          width: 100%;
-          margin-top: 32px;
+.beneficios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
 
 
-          && h3 {
-            font-size: 16px;
-            font-weight: 500px;
-            color: #333333;
-            line-height: 22.4px;
-          }
+    &&
 
-          && p {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 19.6px;
-            color: #4D4D4D;
+    .cardBeneficios {
+        width: 100%;
+        padding: 20px;
+        border: 1.5px solid #EAEAF5;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
 
-          }
 
-          a {
+        &&
+
+        .cardIcone {
+            min-width: 48px;
+            height: 48px;
+            object-fit: cover;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 246px;
-            padding: 12px;
-            background-color: #6E23DE;
-            border-radius: 8px;
             color: #fff;
-            font-size: 18px;
-            font-weight: 500;
-            text-decoration: none;
-            text-align: center;
-            line-height: 25.2px;
-          }
         }
+
+        &&
+
+        .texttosCardBenedicios {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+
+
+            &&
+
+            h3 {
+                font-size: 18px;
+                color: #333333;
+                font-weight: 600;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+
+            &&
+
+            p {
+                line-height: 22.4px;
+            }
+        }
+
+        .ci1 {
+            background-color: #C6ABFF;
+        }
+
+        .ci2 {
+            background-color: #7826F2;
+        }
+
+        .ci3 {
+            background-color: #0E041F;
+        }
+    }
+    
+}
+
+
+@media (max-width: 600px){
+
+
+    .cardPrincipal {
+        width: 288px;
+    }
+
+
+    .cardImagemPrincipal {
+        width: 100%;
+        height: 138px;
+        background-color: #E7E6F0;
+        margin: 0;
+        padding: 0;
+       
+
+
+        && 
+
+        .textCardImagemPrincipal {
+            display: flex;
+            flex-direction: column;
+           
+            padding-left: 10px;
+
+            && 
+
+            p {
+                font-size: 12px;
+                color: #7826F2;
+                font-weight: 400;
+            }
+
+
+
+            && 
+
+            h3 {
+                font-size: 18px;
+                font-weight: 600;
+                color: #333333;
+                line-height: 25.2px;
+            }
+        }
+
+        &&
+
+        .imgCardTextPrincipal  {
+             
+            &&
+            img {
+            height: 125.07px;
+            object-fit: cover;
+            margin-right: 29px;
+            margin-top: 20px;
+            
+            }
+        }
+    }
+    
+
+    .logo {
+        width: 100%;
+    }
+
+    .content {
+        width: 288px;
+    }
+
+    .cardBeneficios {
+        width: 100%;
+        padding: 20px;
+        border: 1.5px solid #EAEAF5;
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;
+
+    }
+
+    .textoInicial {
+    display: flex;
+    flex-direction: column;
+   
+    margin-top: 32px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+
+    &&
+
+    p {
+
+        font-size: 14px;
+        line-height: 22.4px;
+        color: #4D4D4D;
+        font-weight: 400;
+
+    }
+
+    &&
+
+    h3{
+        font-size: 20px;
+        color: #333333;
+        line-height: 33.6px;
+        font-weight: 600;
+    }
+}
+
+    .paragrafo p {
+        line-height: 19.6px;
+        font-weight: 400;
+        color: #4D4D4D;
+        font-size: 14px;
+    }
+
+
+    .cardPosts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+
+        && 
 
         .posts {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          border-top: 1.5px solid #EAEAF5;
-          margin-top: 32px;
+            min-width: 100%;
+        }
+    }
 
-          && h3 {
-            font-size: 18px;
-            font-weight: 500;
+    .cardTextoBotaoUltimaPostagem {
+         display: flex;
+         flex-wrap: wrap;
+     
+      
+
+         &&
+
+         p {
+            max-width: 100%;
+            text-align: start;
+            font-size: 14px;
             color: #333333;
-            margin-top: 24px;
-          }
+            
+         }
+       
+
+        &&
+
+        a {
+            min-width: 100%;
+            padding: 16px;
+            border-radius: 8px;
+            border: 1.5px solid #DBDBE5;
+            text-decoration: none;
+            color: #333333;
+            text-align: center;
+            font-size: 16px;
         }
+    }
 
-        .postFilhos {
-          width: 100%;
-          height: 571px;
-          margin-top: 24px;
-          display: flex;
-          align-items: center;
-          flex-direction: column;
+    .politicaDesinscreverse {
+        display: flex;
+        flex-direction: column;
+    }
 
 
+    .headerUtilmaPostagem {
+
+        p {
+            font-size: 14px;
+            color: #7F7F7F;
+            font-weight: 600;
         }
-
-        .post {
-          height: 171px;
-          width: 100%;
-          border-radius: 8px;
-
-          && img {
-            border-radius: 16px;
-          }
-        }
-
-        .textosPost {
-          display: flex;
-          flex-direction: column;
-
-        }
-
-        .tt {
-          width: 100%;
-          height: 5px;
-          display: flex;
-          flex-direction: column;
-          gap: 7px;
-          margin: 0;
-          margin-top: 8px;
-
-
-
-          && p {
+        .pData {
             font-size: 12px;
             color: #7F7F7F;
-          }
-
-          && .pt {
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 19.6px;
-
-            color: #4D4D4D;
-          }
+            font-weight: 400;
         }
+    }
+    
+    .cardJuntesseAnossaComunidade {
 
-        .btnP {
-          display: flex;
-          flex-direction: column;
-          gap: 14px;
-          margin-top: 16px;
-
-          && p {
+        h3 {
             font-size: 16px;
             color: #333333;
-            line-height: 22.4px;
-          }
-        }
-
-
-        .btnPost {
-
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 12px 20px 12px 20px;
-          font-size: 14px;
-          font-weight: 500;
-          border: 1.5px solid #EAEAF5;
-          line-height: 19.6px;
-          text-decoration: none;
-          border-radius: 8px;
-          color: #000;
-          font-weight: 600;
-
-
-          && p {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 19.6px;
-            color: #020000;
             font-weight: 600;
-          }
         }
 
+        &&
 
-        .redesLinks {
-          width: 285px;
-          height: 74px;
-          display: flex;
-          flex-direction: column;
-          gap: 32px;
-
-          && .logoRedesSociasi {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-          }
-
-
-          && .linksUteis {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-
-          }
-
-
-          .linksUteis a {
+        p {
+            
             font-size: 14px;
-            color: #DDDCE5;
-            text-decoration: none;
             font-weight: 400;
-            font-weight: 19.6px;
-          }
+            color: #4D4D4D;
+            line-height: 19.6px;
         }
 
 
-        .imagem_post1 {
-          width: 240px;
-          height: 171px;
-          object-fit: cover;
+        &&
+
+        a {
+            font-size: 14px;
         }
+    }
 
-
-
-        .imagem_post3 {
-
-          width: 240px;
-          height: 171px;
-          object-fit: cover;
+    .contentCardOutrosConteudos {
+        h3 {
+            font-size: 16px;
+            color: #333333;
+            font-weight: 600;
         }
+    }
+
+    .titleDate {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            color: #7F7F7F;
+            margin-top: 4px;
+        }
+    }
+}
 
 
 
-
-
-      }
     </style>
-  </head>
+</head>
+<body>
 
 
 
-  <div class="container">
-
-    <div class="logo">
-      <img src="https://cdn.cativalab.digital/cativa/files/72d14fa7-b660-4953-a26d-7c8ea41ddf20.png" alt="logo" />
-    </div>
-
-    <div class="cardMain">
+    <div class="container">
 
 
-      <div class="cardImgTopo">
 
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrE1cxy9V0VU_hVW4dRiSh7vb6DWiPa7fA3ZUia1Zb1vfXra6apRu7_wWlEIujdcYl-EMYL0RGJ1kj4w1Te-A3T2ucHGYofDU748ipgrtjuhmOWACWaH7DUtGtY0HprPe5t9KIkF21AJj0Zw6DyICcbekHxsqfa5w065N2WHjkAqSwpujxfz0HATzIPjKk/w640-h426/professional-golfer-hits-ball-from-sand-trap-bali-inodesia.jpg" alt="img_topo1" class="img_topo1" />
+        <div class="cardPrincipal">
 
-      </div>
-
-      <div class="texts">
-        <h3><b>Comunicação assertiva - Não fale em latim com seu membro</b></h3>
-
-        <p>A simplicidade é uma das principais formas de encurtar caminhos sem perder seu rumo. Saber onde quer chegar é importante, traçar o caminho de forma correta é tão valioso quanto.
-
-<br><br>Ser assertivo é ter a habilidade de se expressar de forma clara e direta, sem ruídos.
-
-<br><br>Bloqueios de comunicação confundem sua audiência e acabam os fazendo duvidar do seu propósito.
-
-<br><br>Será que ele realmente acredita no que diz, se nem se quer conseguir expressar o que quer dizer?
-
-<br><br>Pessoas que se comunicam bem e têm uma qualidade inferior em seu conteúdo podem ter mais sucesso do que aqueles que se comunicam mal com um conteúdo superior.
-
-<br><br>Ter um produto de qualidade deve estar aliado à forma como irá o posicionar e comunicar.</p>
-      </div>
-
-      <div class="ultimaPostagem">
-        <div class="titleUltimaPostagem">
-
-        </div>
-
-        <div class="cardImgUltimaPostagem">
-          <div class="imgUltimaPostagem">
-
-
-          </div>
-
-          <div class="titlesCardUltimaPostagem">
-            <div class="textCardultimaPostagem">
-              <p>Comunidade e a mudança de comportamento do consumidor</p>
+            <div class="logo">
+                  <img src="https://cdn.cativalab.digital/cativa/files/72d14fa7-b660-4953-a26d-7c8ea41ddf20.png" alt="logo">
             </div>
 
-            <div class="btnCardUltimaPostagem">
-              <a href"https://blog.cativa.digital/?source=newslettermail">Conferir</a>
-            </div>
-          </div>
+            <div class="content">
 
-        </div>
+                <div class="cardImagemPrincipal">
 
+                    <div class="textCardImagemPrincipal">
+                        <p>Opa!</p>
+                        <h3>Temos uma funcionalidade nova na área!</h3>
+                    </div>
 
+                    <div class="imgCardTextPrincipal">
+                        <img src="./assets//img/Free Hand Holding iPhone 12 Mini.png" alt="">
+                    </div>
 
+                 
 
-        <div class="cardParoveite">
-          <h3>Aproveite e junte-se à nossa comunidade gratuita!</h3>
-
-          <p>Além disso, gostaríamos de convidá-lo para fazer parte da nossa comunidade gratuita da Cativa,
-            onde você pode conectar-se com outros líderes e trocar experiências valiosas.</p>
-
-          <div class="cliqueNoLink">
-            <p>Clique nos links abaixo para explorar nosso blog e se inscrever na comunidade:</p>
-          </div>
-
-          <a href="https://cativa.social/join-community/?utm_source=newsletter&utm_medium=mail&utm_campaign=xxxx&utm_content=xxx">Entrar na comunidade</a>
-
-        </div>
+                </div>
 
 
-        <div class="posts">
-          <h3>Mais conteúdos que podem te interessar</h3>
-
-          <div class="postFilhos">
-
-            <div class="post">
+                <div class="textoInicial">
+                     <p>Atualização</p>
+                    <h3>Agora você pode compartilhar seus posts favoritos</h3>
+                </div>
 
 
-              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilcCZx_jsGeEog-OIesS7qs7H2UFKYohAf7O9lRxO2nQDOOzdZrFSMTVrDNVFad4j6J7Kb9-9QK5qR4S19InI3K0e0DGEgZqHjntTxSwl3uyu55C-o9pJbiyrAOd6b9zsXLUAD_TfmlL6dN6nCDZF7J3X_wFt5aleaBvcDZTC5vznGs2x-74LgkN9Qdn7a/w640-h426/cartomante-vista-frontal-com-globo-de-cristal_23-2150006252.jpg" alt="imagem_post1" class="imagem_post1" />
+               
+
+                   
+                <div class="beneficios">
+
+                    <div class="cardBeneficios">
+                        <div class="cardIcone ci1">
+                            <i>Icone</i>
+                        </div>
+
+                        <div class="texttosCardBenedicios">
+                            <h3>Benefício 1</h3>
+                            <p>Clique nos links abaixo para explorar nosso blog e se inscrever na comunidade...</p>
+                        </div>
+
+                    </div>
 
 
-              <div class="textosPost">
-                <div class="tt">
 
-                  <p class="pt">E se você pudesse ver o futuro?</p>
+                    <div class="cardBeneficios">
+                        <div class="cardIcone ci2">
+                            <i>Icone</i>
+                        </div>
 
-                  <div class="btnP">
-                    <p> Einstein dizia que o tempo é relativo Sêneca, que o temp...</p>
+                        <div class="texttosCardBenedicios">
+                            <h3>Benefício 2</h3>
+                            <p>Clique nos links abaixo para explorar nosso blog e se inscrever na comunidade...</p>
+                        </div>
 
-                    <a href="https://blog.cativa.digital/2023/11/e-se-voce-pudesse-prever-o-futuro.html" class="btnPost">Ler mais</a>
-                  </div>
+                    </div>
+
+
+
+
+
+                    <div class="cardBeneficios">
+                        <div class="cardIcone ci3">
+                            <i>Icone</i>
+                        </div>
+
+                        <div class="texttosCardBenedicios">
+                            <h3>Benefício 3</h3>
+                            <p>Clique nos links abaixo para explorar nosso blog e se inscrever na comunidade...</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+              
+
+
+                <div class="cardOutrosConteudos">
+                   
+                    <div class="contentCardOutrosConteudos">
+                      
+                        <p>Saiba mais acessando a nossa Central de Ajuda pelo botão abaixo</p>
+
+                        <a href="">Central de Ajuda</a>
+                       
+                    </div>
 
                 </div>
 
@@ -812,70 +738,34 @@
 
 
 
-              </div>
             </div>
 
 
 
-
-            <div class="post">
-
-
-              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHPafnIrPsQvAsfA4In3X5eEQdg4XEh96eHNl6xIEVGo4UwnwcEBpcr9MPOR7gh4mOHLjs44mUvOqlgKRi_s6VDAbREcB6p3CbrASs_GQGPqnQOxjXwAu3ZmH9CnS5cqalvf2bfswiEoUsG9I5LG4ZgxUnHJ7hBSHku-xvRo63XurFe8Ln_Fr1Mug9NoCE/w345-h194-p-k-no-nu/AdobeStock_621238469.jpeg" alt="imagem_post3" class="imagem_post3" />
-
-
-              <div class="textosPost">
-                <div class="tt">
-
-                  <p class="pt">O poder da tribo pode escalar seu negócio digital</p>
-
-                  <div class="btnP">
-                    <p>
-                      Tudo começa por uma Tribo! Nossa galáxia é p...
-                    </p>
-
-                    <a href="https://blog.cativa.digital/2023/11/o-poder-da-tribo-uma-comunidade-unida.html" class="btnPost">Ler mais</a>
-                  </div>
-
-                </div>
-              </div>
-
-
-
-
-
-            </div>
-          </div>
         </div>
 
+        <div class="redesSociais">
+            
+            <div class="linksRedesSociais">
+                <a href="">
+                    <img src="https://cdn.cativalab.digital/cativa/files/8312c973-2c93-441f-af98-f75069a4b232.png" alt="imagem_instagram">
+                </a>
+            <a href="">
+                <img src="https://cdn.cativalab.digital/cativa/files/81aefb39-c864-40b8-b3b8-dd71033fe8da.png" alt="imagem_linkedin">
+            </a>
+            <a href="">
+                <img src="https://cdn.cativalab.digital/cativa/files/3cb693e3-d377-4cf5-9a20-bbea45b880f1.png" alt="imagem_youtube">
+            </a>
+            </div>
 
 
-      </div>
+            <div class="politicaDesinscreverse">
+                <a href="">Políticas de Privacidade</a>
+                <a href="">Desinscrever-se</a>
+            </div>
 
-
-
+        </div>
     </div>
-
-    <div class="redesLinks">
-      <div class="logoRedesSociasi">
-        <a href="https://www.instagram.com/cativa.digital">
-          <img src="https://cdn.cativalab.digital/cativa/files/8312c973-2c93-441f-af98-f75069a4b232.png" alt="logo_intagram" />
-        </a>
-
-        <a href="https://www.linkedin.com/company/cativadigital">
-          <img src="https://cdn.cativalab.digital/cativa/files/81aefb39-c864-40b8-b3b8-dd71033fe8da.png" alt="logo_linkedin" />
-        </a>
-
-
-        <a href="https://www.youtube.com/@cativa.digital">
-          <img src="https://cdn.cativalab.digital/cativa/files/3cb693e3-d377-4cf5-9a20-bbea45b880f1.png" alt="logo_youtube" />
-        </a>
-      </div>
-
-
-
-    </div>
-
-  </div>
-
+    
+</body>
 </html>

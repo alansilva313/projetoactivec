@@ -3,9 +3,464 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./novoblog.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
     <title>NOVO BLOG</title>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, helvetica, sans-serif;
+}
+
+.container
+{
+    width: 100%;
+    height: 100%;
+    background: #7826F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
+.logo {
+    width: 472px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.content {
+    width: 472px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+
+.cardImagemPrincipal
+{
+    width: 100%;
+    height: 243px;
+    border-radius: 14.13px;
+    background-color: #E7E6F0;
+    overflow: hidden;
+
+
+    &&
+
+    .imagem_principal {
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+
+
+.textoInicial {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+    width: 100%;
+
+    &&
+
+    h3{
+        font-size: 18px;
+        color: #333333;
+        line-height: 25.2px;
+        font-weight: 600;
+    }
+}
+
+
+
+.ultimaPostagem {
+    width: 100%;
+    margin-top: 32px;
+    
+
+
+    &&
+
+    .headerUtilmaPostagem {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+
+    &&
+
+
+    .cardImagemUltimaPostagem {
+        width: 100%;
+   
+       
+        
+
+
+        &&
+
+        img {
+            width: 100%;
+            border-radius: 16px 16px 0px 0px;
+            margin-top: 16px;
+        }
+    }
+
+
+    &&
+
+    .cardTextoBotaoUltimaPostagem {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: #F6F5FF;
+        padding: 16px;
+        border-radius: 0px 0px 16px 16px;
+
+
+
+        &&
+
+        a {
+            width: 112px;
+            padding: 16px;
+            border-radius: 8px;
+            border: 1.5px solid #DBDBE5;
+            text-decoration: none;
+            color: #333333;
+            text-align: center;
+        }
+        
+    }
+
+
+
+}
+
+.cardJuntesseAnossaComunidade {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+
+
+
+
+    &&
+    
+    p {
+
+        color: #4D4D4D;
+
+    }
+
+    &&
+
+    a {
+        width: 100%;
+        text-align: center;
+        padding: 16px 20px 16px 20px;
+        background-color: #7826F2;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+}
+
+
+.cardOutrosConteudos {
+    width: 100%;
+    border-top: 1.5px solid #EAEAF5;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+
+    &&
+
+    .contentCardOutrosConteudos {
+        margin-top: 24px;
+    }
+
+    &&
+
+    .cardPosts {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+        gap: 16px;
+
+
+        &&
+
+        .posts{
+            width: 204px;
+
+
+            &&
+            .cardImagePost {
+                overflow: hidden;
+                max-width: 100%;
+                height: 171px;
+            }
+            
+            .cardImagePost img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: 1.5px solid #EAEAF5;
+                border-radius: 8px;
+            }
+            
+
+          
+
+            
+            
+        }
+    }
+}
+
+
+.cardPostTextButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+
+
+
+    &&
+
+    a {
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        padding: 12px 20px 12px 20px;
+        border: 1.5px solid #EAEAF5;
+        border-radius: 8px;
+    }
+}
+
+.paragrafo p {
+    line-height: 22.4px;
+    color: #4D4D4D;
+    font-size: 16px;
+}
+
+.redesSociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+    width: 100%;
+
+
+    &&
+
+    .linksRedesSociais {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+
+        &&
+
+        img {
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+        }
+
+    
+    }
+
+    &&
+
+    .politicaDesinscreverse {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      
+
+
+        &&
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 600px){
+
+
+    .cardPrincipal {
+        width: 288px;
+    }
+
+    .cardImagemPrincipal {
+        width: 100%;
+        height: 138px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .content {
+        width: 288px;
+    }
+
+
+    .paragrafo p {
+        line-height: 19.6px;
+        font-weight: 400;
+        color: #4D4D4D;
+        font-size: 14px;
+    }
+
+
+    .cardPosts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+
+        && 
+
+        .posts {
+            min-width: 100%;
+        }
+    }
+
+    .cardTextoBotaoUltimaPostagem {
+         display: flex;
+         flex-wrap: wrap;
+     
+      
+
+         &&
+
+         p {
+            max-width: 100%;
+            text-align: start;
+            font-size: 14px;
+            color: #333333;
+            
+         }
+       
+
+        &&
+
+        a {
+            min-width: 100%;
+            padding: 16px;
+            border-radius: 8px;
+            border: 1.5px solid #DBDBE5;
+            text-decoration: none;
+            color: #333333;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+
+    .politicaDesinscreverse {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .headerUtilmaPostagem {
+
+        p {
+            font-size: 14px;
+            color: #7F7F7F;
+            font-weight: 600;
+        }
+        .pData {
+            font-size: 12px;
+            color: #7F7F7F;
+            font-weight: 400;
+        }
+    }
+    
+    .cardJuntesseAnossaComunidade {
+
+        h3 {
+            font-size: 16px;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        &&
+
+        p {
+            
+            font-size: 14px;
+            font-weight: 400;
+            color: #4D4D4D;
+            line-height: 19.6px;
+        }
+
+
+        &&
+
+        a {
+            font-size: 14px;
+        }
+    }
+
+    .contentCardOutrosConteudos {
+        h3 {
+            font-size: 16px;
+            color: #333333;
+            font-weight: 600;
+        }
+    }
+
+    .titleDate {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            color: #7F7F7F;
+            margin-top: 4px;
+        }
+    }
+}
+
+    </style>
 </head>
 <body>
 
@@ -61,7 +516,7 @@
                  </div>
 
                  <div class="cardImagemUltimaPostagem">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilcCZx_jsGeEog-OIesS7qs7H2UFKYohAf7O9lRxO2nQDOOzdZrFSMTVrDNVFad4j6J7Kb9-9QK5qR4S19InI3K0e0DGEgZqHjntTxSwl3uyu55C-o9pJbiyrAOd6b9zsXLUAD_TfmlL6dN6nCDZF7J3X_wFt5aleaBvcDZTC5vznGs2x-74LgkN9Qdn7a/w640-h426/cartomante-vista-frontal-com-globo-de-cristal_23-2150006252.jpg" alt="">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilcCZx_jsGeEog-OIesS7qs7H2UFKYohAf7O9lRxO2nQDOOzdZrFSMTVrDNVFad4j6J7Kb9-9QK5qR4S19InI3K0e0DGEgZqHjntTxSwl3uyu55C-o9pJbiyrAOd6b9zsXLUAD_TfmlL6dN6nCDZF7J3X_wFt5aleaBvcDZTC5vznGs2x-74LgkN9Qdn7a/w640-h426/cartomante-vista-frontal-com-globo-de-cristal_23-2150006252.jpg" alt="imagem_ultima_postagem">
                  </div>
 
 

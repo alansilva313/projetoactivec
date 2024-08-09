@@ -96,6 +96,7 @@
 
     .cardImagemUltimaPostagem {
         width: 100%;
+   
        
         
 
@@ -207,18 +208,23 @@
 
             &&
             .cardImagePost {
-                 overflow: hidden;
+                overflow: hidden;
+                max-width: 100%;
+                height: 171px;
             }
-
-            &&
-
+            
             .cardImagePost img {
                 width: 100%;
-                height: 171px;
+                height: 100%;
                 object-fit: cover;
                 border: 1.5px solid #EAEAF5;
                 border-radius: 8px;
             }
+            
+
+          
+
+            
             
         }
     }
