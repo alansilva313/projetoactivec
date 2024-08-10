@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+	<title>NOVO BLOG</title>
+	<style>
+		* {
+		    margin: 0;
+		    padding: 0;
+		    box-sizing: border-box;
+		    font-family: Montserrat, helvetica, sans-serif;
+		}
+		
+		.container
+		{
+		    width: 100%;
+		    height: 100%;
+		    background: #7826F2;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		    padding-top: 200px;
+		    padding-bottom: 200px;
+		}
+		
+		
+		.logo {
+		    width: 472px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    margin-bottom: 32px;
+		}
+		
+		.content {
+		    width: 472px;
+		    padding: 24px;
+		    background-color: #fff;
+		    border-radius: 16px;
+		}
+		
+		
+		.cardImagemPrincipal
+		{
+		    width: 100%;
+		    height: 237.16px;
+		    background-color: #e9e8f1;
+		    border-radius: 8px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: space-around;
+		    padding-left: 32px;
+		    overflow: hidden;
+		
+		
+		    &&
+		
+		    p {
+		    color: #7826F2;
+		    font-size: 16px;
+		    font-weight: 400;
+		   }
+		&&
+		
+		h3 {
+		    font-size: 24px;
+		    font-weight: 600;
+		    line-height: 33.6px;
+		    color: #333333;
+		    margin-top: 7px;
+		}
+		
+		&&
+		
+		    .imgCardTextPrincipal img {
+		        height: 241.01px;
+		        object-fit: cover;
+		    }
+		
+		
+		}
+		
+		
+		
+		.textoInicial {
+		    display: flex;
+		    flex-direction: column;
+		   
+		    margin-top: 32px;
+		    width: 100%;
+		    align-items: center;
+		    text-align: center;
+		
+		    &&
+		
+		    p {
+		
+		font-size: 16px;
+		line-height: 22.4px;
+		color: #4D4D4D;
+		font-weight: 400;
+		
+		    }
+		
+		    &&
+		
+		    h3{
+		font-size: 24px;
+		color: #333333;
+		line-height: 33.6px;
+		font-weight: 600;
+		    }
+		}
+		
+		
+		
+		.ultimaPostagem {
+		    width: 100%;
+		    margin-top: 32px;
+		    
+		
+		
+		    &&
+		
+		    .headerUtilmaPostagem {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		    }
+		
+		
+		
+		    &&
+		
+		
+		    .cardImagemUltimaPostagem {
+		width: 100%;
+		   
+		       
+		
+		
+		
+		&&
+		
+		img {
+		    width: 100%;
+		    border-radius: 16px 16px 0px 0px;
+		    margin-top: 16px;
+		}
+		    }
+		
+		
+		    &&
+		
+		    .cardTextoBotaoUltimaPostagem {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		background-color: #F6F5FF;
+		padding: 16px;
+		border-radius: 0px 0px 16px 16px;
+		
+		
+		
+		&&
+		
+		a {
+		    width: 112px;
+		    padding: 16px;
+		    border-radius: 8px;
+		    border: 1.5px solid #DBDBE5;
+		    text-decoration: none;
+		    color: #333333;
+		    text-align: center;
+		}
+		
+		    }
+		
+		
+		
+		}
+		
+		.cardJuntesseAnossaComunidade {
+		    margin-top: 32px;
+		    width: 100%;
+		    display: flex;
+		    flex-direction: column;
+		    gap: 24px;
+		
+		
+		
+		
+		
+		    &&
+		    
+		    p {
+		
+		color: #4D4D4D;
+		
+		    }
+		
+		    &&
+		
+		    a {
+		width: 100%;
+		text-align: center;
+		padding: 16px 20px 16px 20px;
+		background-color: #7826F2;
+		color: #fff;
+		text-decoration: none;
+		border-radius: 8px;
+		    }
+		}
+		
+		
+		.cardOutrosConteudos {
+		    width: 100%;
+		    margin-top: 32px;
+		    display: flex;
+		    flex-direction: column;
+		    gap: 24px;
+		
+		
+		    &&
+		
+		    .contentCardOutrosConteudos {
+		margin-top: 24px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 24px;
+		
+		
+		&&
+		
+		a {
+		    padding: 16px 20px 16px 20px;
+		    background-color: #6E23DE;
+		    text-align: center;
+		    text-decoration: none;
+		    color: #fff;
+		    border-radius: 8px;
+		}
+		    }  
+		}
+		
+		
+		.cardPostTextButtons {
+		    width: 100%;
+		    display: flex;
+		    flex-direction: column;
+		    gap: 16px;
+		
+		
+		    &&
+		
+		    a {
+		width: 100%;
+		text-align: center;
+		text-decoration: none;
+		padding: 12px 20px 12px 20px;
+		border: 1.5px solid #EAEAF5;
+		border-radius: 8px;
+		    }
+		}
+		
+		
+		
+		.redesSociais {
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		    gap: 24px;
+		    margin-top: 32px;
+		    width: 100%;
+		
+		
+		    &&
+		
+		    .linksRedesSociais {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		
+		
+		&&
+		
+		img {
+		    width: 32px;
+		    height: 32px;
+		    object-fit: cover;
+		}
+		
+		    
+		    }
+		
+		    &&
+		
+		    .politicaDesinscreverse {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		      
+		
+		
+		&&
+		
+		a {
+		    color: #fff;
+		    text-decoration: none;
+		}
+		    }
+		}
+		
+		
+		.beneficios {
+		    width: 100%;
+		    display: flex;
+		    flex-direction: column;
+		    gap: 24px;
+		    margin-top: 32px;
+		
+		
+		    &&
+		
+		    .cardBeneficios {
+		width: 100%;
+		padding: 20px;
+		border: 1.5px solid #EAEAF5;
+		border-radius: 8px;
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		
+		
+		&&
+		
+		.cardIcone {
+		    min-width: 48px;
+		    height: 48px;
+		    object-fit: cover;
+		    border-radius: 8px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    color: #fff;
+		}
+		
+		&&
+		
+		.texttosCardBenedicios {
+		    display: flex;
+		    flex-direction: column;
+		    gap: 24px;
+		
+		
+		
+		    &&
+		
+		    h3 {
+		        font-size: 18px;
+		        color: #333333;
+		        font-weight: 600;
+		        font-family: Arial, Helvetica, sans-serif;
+		    }
+		
+		
+		    &&
+		
+		    p {
+		        line-height: 22.4px;
+		    }
+		}
+		
+		.ci1 {
+		    background-color: #C6ABFF;
+		}
+		
+		.ci2 {
+		    background-color: #7826F2;
+		}
+		
+		.ci3 {
+		    background-color: #0E041F;
+		}
+		    }
+		    
+		}
+		
+		
+		@media (max-width: 600px){
+		
+		
+		    .cardPrincipal {
+		width: 288px;
+		    }
+		
+		
+		    .cardImagemPrincipal {
+		width: 100%;
+		height: 138px;
+		background-color: #E7E6F0;
+		margin: 0;
+		padding: 0;
+		       
+		
+		
+		&& 
+		
+		.textCardImagemPrincipal {
+		    display: flex;
+		    flex-direction: column;
+		   
+		    padding-left: 10px;
+		
+		    && 
+		
+		    p {
+		        font-size: 12px;
+		        color: #7826F2;
+		        font-weight: 400;
+		    }
+		
+		
+		
+		    && 
+		
+		    h3 {
+		        font-size: 18px;
+		        font-weight: 600;
+		        color: #333333;
+		        line-height: 25.2px;
+		    }
+		}
+		
+		&&
+		
+		.imgCardTextPrincipal  {
+		     
+		    &&
+		    img {
+		    height: 125.07px;
+		    object-fit: cover;
+		    margin-right: 29px;
+		    margin-top: 20px;
+		    
+		    }
+		}
+		    }
+		    
+		
+		    .logo {
+		width: 100%;
+		    }
+		
+		    .content {
+		width: 288px;
+		    }
+		
+		    .cardBeneficios {
+		width: 100%;
+		padding: 20px;
+		border: 1.5px solid #EAEAF5;
+		border-radius: 8px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 24px;
+		
+		    }
+		
+		    .textoInicial {
+		    display: flex;
+		    flex-direction: column;
+		   
+		    margin-top: 32px;
+		    width: 100%;
+		    align-items: center;
+		    text-align: center;
+		
+		    &&
+		
+		    p {
+		
+		font-size: 14px;
+		line-height: 22.4px;
+		color: #4D4D4D;
+		font-weight: 400;
+		
+		    }
+		
+		    &&
+		
+		    h3{
+		font-size: 20px;
+		color: #333333;
+		line-height: 33.6px;
+		font-weight: 600;
+		    }
+		}
+		
+		    .paragrafo p {
+		line-height: 19.6px;
+		font-weight: 400;
+		color: #4D4D4D;
+		font-size: 14px;
+		    }
+		
+		
+		    .cardPosts {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		
+		
+		&& 
+		
+		.posts {
+		    min-width: 100%;
+		}
+		    }
+		
+		    .cardTextoBotaoUltimaPostagem {
+		 display: flex;
+		 flex-wrap: wrap;
+		     
+		      
+		
+		 &&
+		
+		 p {
+		    max-width: 100%;
+		    text-align: start;
+		    font-size: 14px;
+		    color: #333333;
+		    
+		 }
+		       
+		
+		&&
+		
+		a {
+		    min-width: 100%;
+		    padding: 16px;
+		    border-radius: 8px;
+		    border: 1.5px solid #DBDBE5;
+		    text-decoration: none;
+		    color: #333333;
+		    text-align: center;
+		    font-size: 16px;
+		}
+		    }
+		
+		    .politicaDesinscreverse {
+		display: flex;
+		flex-direction: column;
+		    }
+		
+		
+		    .headerUtilmaPostagem {
+		
+		p {
+		    font-size: 14px;
+		    color: #7F7F7F;
+		    font-weight: 600;
+		}
+		.pData {
+		    font-size: 12px;
+		    color: #7F7F7F;
+		    font-weight: 400;
+		}
+		    }
+		    
+		    .cardJuntesseAnossaComunidade {
+		
+		h3 {
+		    font-size: 16px;
+		    color: #333333;
+		    font-weight: 600;
+		}
+		
+		&&
+		
+		p {
+		    
+		    font-size: 14px;
+		    font-weight: 400;
+		    color: #4D4D4D;
+		    line-height: 19.6px;
+		}
+		
+		
+		&&
+		
+		a {
+		    font-size: 14px;
+		}
+		    }
+		
+		    .contentCardOutrosConteudos {
+		h3 {
+		    font-size: 16px;
+		    color: #333333;
+		    font-weight: 600;
+		}
+		    }
+		
+		    .titleDate {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		p {
+		    font-size: 12px;
+		    font-weight: 400;
+		    color: #7F7F7F;
+		    margin-top: 4px;
+		}
+		    }
+		}
+		
+		
+		
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="cardPrincipal">
+			<div class="logo">
+				<img src="https://cdn.cativalab.digital/cativa/files/72d14fa7-b660-4953-a26d-7c8ea41ddf20.png" alt="logo">
+			</div>
+			<div class="content">
+				<div class="cardImagemPrincipal">
+					<div class="textCardImagemPrincipal">
+						<p>Opa!</p>
+						<h3>Temos uma funcionalidade nova na área!</h3>
+					</div>
+					<div class="imgCardTextPrincipal">
+						<img src="./assets//img/Free Hand Holding iPhone 12 Mini.png" alt="">
+					</div>
+				</div>
+				<div class="textoInicial">
+					<p>Atualização</p>
+					<h3>Agora você pode compartilhar seus posts favoritos</h3>
+				</div>
+				<div class="beneficios">
+					<div class="cardBeneficios">
+						<div class="cardIcone ci1">
+							<i>Icone</i>
+						</div>
+						<div class="texttosCardBenedicios">
+							<h3>Benefício 1</h3>
+							<p>Clique nos links abaixo para explorar nosso blog e se inscrever na comunidade...</p>
+						</div>
+					</div>
+					<div class="cardBeneficios">
+						<div class="cardIcone ci2">
+							<i>Icone</i>
+						</div>
+						<div class="texttosCardBenedicios">
+							<h3>Benefício 2</h3>
+							<p>Clique nos links abaixo para explorar nosso blog e se inscrever na comunidade...</p>
+						</div>
+					</div>
+					<div class="cardBeneficios">
+						<div class="cardIcone ci3">
+							<i>Icone</i>
+						</div>
+						<div class="texttosCardBenedicios">
+							<h3>Benefício 3</h3>
+							<p>Clique nos links abaixo para explorar nosso blog e se inscrever na comunidade...</p>
+						</div>
+					</div>
+				</div>
+				<div class="cardOutrosConteudos">
+					<div class="contentCardOutrosConteudos">
+						<p>Saiba mais acessando a nossa Central de Ajuda pelo botão abaixo</p>
+						<a href="">Central de Ajuda</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="redesSociais">
+			<div class="linksRedesSociais">
+				<a href="">
+					<img src="https://cdn.cativalab.digital/cativa/files/8312c973-2c93-441f-af98-f75069a4b232.png" alt="imagem_instagram">
+				</a>
+				<a href="">
+					<img src="https://cdn.cativalab.digital/cativa/files/81aefb39-c864-40b8-b3b8-dd71033fe8da.png" alt="imagem_linkedin">
+				</a>
+				<a href="">
+					<img src="https://cdn.cativalab.digital/cativa/files/3cb693e3-d377-4cf5-9a20-bbea45b880f1.png" alt="imagem_youtube">
+				</a>
+			</div>
+			<div class="politicaDesinscreverse">
+				<a href="">Políticas de Privacidade</a>
+				<a href="">Desinscrever-se</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
